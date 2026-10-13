@@ -10449,6 +10449,8 @@
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
         <Name>Jandakot Tower Runway 24L/R (Metro D, Top Down)</Name>
         <Type>Tower</Type>
+        <Difficulty>4</Difficulty>
+        <AutoTimed>true</AutoTimed>
         <UseGRIB xsi:nil="true" />
         <StudentBriefing>You are operating Jandakot Tower (118.100) top down, which includes Jandakot Ground (124.300). Jandakot Tower (Circuit) is not open.
 
