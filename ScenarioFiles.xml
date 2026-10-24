@@ -4850,7 +4850,8 @@
         <InstructorNotes>TBI
 
 **AUTO-TIMING**
-- This scenario is auto-timed. These departures spawn and roll by themselves, with no action from you: **QFA35** (T+2:00), **YUP** (T+4:00), **QFA610** (T+8:00), **QLK227** (T+11:00), **ANZ124** (T+19:00), **JST510** (T+22:00), **JST900** (T+27:00), **VOZ219** (T+30:00).</InstructorNotes>
+- This scenario is auto-timed. These departures spawn and roll by themselves, with no action from you: **QFA35** (T+2:00), **YUP** (T+4:00), **QFA610** (T+8:00), **QLK227** (T+11:00), **ANZ124** (T+19:00), **JST510** (T+22:00), **JST900** (T+27:00), **VOZ219** (T+30:00). Each has a timed prompt for its first call once airborne.
+- Still departed by you, because Avalon Tower is closed and the student issues the airways clearance (each has a timed prompt): **JST630** (taxi call T+13:00, ready T+16:00, runway 36, JUSTY3 SID).</InstructorNotes>
         <Targets>
             <Aircraft Callsign="VOZ678" Type="B738" Delay="0">
                 <Squawk Code="2430" ModeC="true" />
@@ -4876,7 +4877,7 @@
                 <Position Latitude="-37.19" Longitude="146.14" Speed="350" Altitude="18000" />
                 <FlightPlan Active="true" Departure="YSSY" Destination="YMML" Alternative=""
                     Rules="1" CruiseSpeed="450" ETD="0000" ATD="0000" RFL="38000" EETHours="00"
-                    EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2 /v/">DCT WOL H65 LEECE Q29 BOOIN BOIN1V/34V</FlightPlan>
+                    EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2 /v/">DCT WOL H65 LEECE Q29 BOOIN BOIN1V/34</FlightPlan>
                 <Route>LUVAS BOOIN ATPER MAITE IGPON MOSVO EGEKA SHEED HORSH RWY34</Route>
             </Aircraft>
             <Aircraft Callsign="TFX15" Type="AT43" Delay="0">
@@ -4885,7 +4886,7 @@
                 <Position Latitude="-36.86" Longitude="146.54" Speed="250" Altitude="16000" />
                 <FlightPlan Active="true" Departure="YSBK" Destination="YMML" Alternative=""
                     Rules="1" CruiseSpeed="241" ETD="0000" ATD="0000" RFL="16000" EETHours="00"
-                    EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/B NAV/RNP2 /v/">DCT BK DCT PEGSU V169 BOYSE BOYS9V/34V</FlightPlan>
+                    EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/B NAV/RNP2 /v/">DCT BK DCT PEGSU V169 BOYSE BOYS9V/34</FlightPlan>
                 <Route>TEMIS BOYSE MAXAL APIGA EMRIG MOSVO EGEKA SHEED HORSH RWY34</Route>
             </Aircraft>
             <Aircraft Callsign="QLK205" Type="DH8C" Delay="0">
@@ -4894,7 +4895,7 @@
                 <Position Latitude="-39.04" Longitude="145.785" Speed="300" Altitude="22000" />
                 <FlightPlan Active="true" Departure="YDPO" Destination="YMML" Alternative=""
                     Rules="1" CruiseSpeed="277" ETD="0000" ATD="0000" RFL="22000" EETHours="00"
-                    EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/B NAV/RNP2 /v/">DCT IRSOM V246 ONAGI H215 RAZZI RAZI1V/34V</FlightPlan>
+                    EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/B NAV/RNP2 /v/">DCT IRSOM V246 ONAGI H215 RAZZI RAZI1V/34</FlightPlan>
                 <Route>ONAGI RAZZI MICHM MOSVO EGEKA SHEED HORSH RWY34</Route>
             </Aircraft>
             <Aircraft Callsign="CPA3710" Type="B748" Delay="0">
@@ -4912,7 +4913,7 @@
                 <Position Latitude="-35.88" Longitude="148.565" Speed="450" Altitude="38000" />
                 <FlightPlan Active="true" Departure="YSSY" Destination="YMML" Alternative=""
                     Rules="1" CruiseSpeed="450" ETD="0000" ATD="0000" RFL="38000" EETHours="00"
-                    EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2 /v/">DCT WOL H65 LEECE Q29 BOOIN BOIN1V/34V</FlightPlan>
+                    EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2 /v/">DCT WOL H65 LEECE Q29 BOOIN BOIN1V/34</FlightPlan>
                 <Route>NABBA BULLA LUVAS BOOIN ATPER MAITE IGPON MOSVO EGEKA SHEED HORSH RWY34</Route>
             </Aircraft>
             <Aircraft Callsign="ETS" Type="BE58" Delay="0">
@@ -4949,7 +4950,10 @@
                 <FlightPlan Active="true" Departure="YMML" Destination="WSSS" Alternative=""
                     Rules="1" CruiseSpeed="473" ETD="0000" ATD="0000" RFL="32000" EETHours="00"
                     EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/D NAV/RNP2/v/">KEPPA3/34 KEPPA Q168 WR/M082F340 T29 AYE/M082F360 T29 CIN A576 ATMAP M635 UDONO/M081F380 M635 SURGA DCT</FlightPlan>
-                <Route>KEPPA BOLAM</Route>
+                <Route>AVMEL KEPPA BOLAM</Route>
+                <TimedMessages>
+                    <TimedMessage Time="180" Message="QFA35: 'Melbourne Departures, QFA35, passing 1500, climbing 5000'" />
+                </TimedMessages>
             </Aircraft>
             <Aircraft Callsign="ANZ124" Type="B788" Delay="1140" StartAuto="true">
                 <Squawk Code="4213" ModeC="true" />
@@ -4960,6 +4964,9 @@
                     Rules="1" CruiseSpeed="478" ETD="0000" ATD="0000" RFL="39000" EETHours="00"
                     EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/D NAV/RNP2/v/">CORRS1/34 CORRS Y81 GEMAC/M085F390 DCT 38S163E DCT LUNBI DCT AA DCT </FlightPlan>
                 <Route>CORRS GEMAC</Route>
+                <TimedMessages>
+                    <TimedMessage Time="1200" Message="ANZ124: 'Melbourne Departures, ANZ124, passing 1500, climbing 5000'" />
+                </TimedMessages>
             </Aircraft>
             <Aircraft Callsign="JST510" Type="A320" Delay="1320" StartAuto="true">
                 <Squawk Code="4103" ModeC="true" />
@@ -4970,6 +4977,9 @@
                     Rules="1" CruiseSpeed="451" ETD="0000" ATD="0000" RFL="35000" EETHours="00"
                     EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2/v/">DOSEL2/34 DOSEL Y59 TESAT DCT</FlightPlan>
                 <Route>DOSEL EBONY</Route>
+                <TimedMessages>
+                    <TimedMessage Time="1380" Message="JST510: 'Melbourne Departures, JST510, passing 1500, climbing 5000'" />
+                </TimedMessages>
             </Aircraft>
             <Aircraft Callsign="QFA610" Type="B738" Delay="480" StartAuto="true">
                 <Squawk Code="3470" ModeC="true" />
@@ -4980,6 +4990,9 @@
                     Rules="1" CruiseSpeed="457" ETD="0000" ATD="0000" RFL="39000" EETHours="00"
                     EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2/v/">NONIX4/34 NONIX H66 BLAKA DCT</FlightPlan>
                 <Route>NONIX</Route>
+                <TimedMessages>
+                    <TimedMessage Time="540" Message="QFA610: 'Melbourne Departures, QFA610, passing 1500, climbing 5000'" />
+                </TimedMessages>
             </Aircraft>
             <Aircraft Callsign="VOZ219" Type="B738" Delay="1800" StartAuto="true">
                 <Squawk Code="4360" ModeC="true" />
@@ -4989,7 +5002,10 @@
                 <FlightPlan Active="true" Departure="YMML" Destination="YPAD" Alternative=""
                     Rules="1" CruiseSpeed="449" ETD="0000" ATD="0000" RFL="40000" EETHours="00"
                     EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2/v/">PEDNI1/34 PEDNI H345 DRINA DCT</FlightPlan>
-                <Route>PEDNI</Route>
+                <Route>AVMEL PEDNI BORTO</Route>
+                <TimedMessages>
+                    <TimedMessage Time="1860" Message="VOZ219: 'Melbourne Departures, VOZ219, passing 1500, climbing 5000'" />
+                </TimedMessages>
             </Aircraft>
             <Aircraft Callsign="QLK227" Type="DH8C" Delay="660" StartAuto="true">
                 <Squawk Code="4330" ModeC="true" />
@@ -5001,7 +5017,7 @@
                     EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2/v/">ML6/34 SUNTI H169 IRSOM W105 LT DCT</FlightPlan>
                 <Route>SUNTI AVNAS</Route>
                 <TimedMessages>
-                    <TimedMessage Time="0" Message="Add SUNTI to route before AVNAS" />
+                    <TimedMessage Time="750" Message="QLK227: 'Melbourne Departures, QLK227, passing 1500, climbing 5000'" />
                 </TimedMessages>
             </Aircraft>
             <Aircraft Callsign="JST900" Type="A320" Delay="1620" StartAuto="true">
@@ -5012,7 +5028,10 @@
                 <FlightPlan Active="true" Departure="YMML" Destination="YBLN" Alternative=""
                     Rules="1" CruiseSpeed="454" ETD="0000" ATD="0000" RFL="36000" EETHours="00"
                     EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2/v/">CRENA3/34 CRENA Q158 COBEL DCT HOODY DCT BLN DCT</FlightPlan>
-                <Route>CRENA</Route>
+                <Route>ONUTO LILPU CRENA KROWS</Route>
+                <TimedMessages>
+                    <TimedMessage Time="1680" Message="JST900: 'Melbourne Departures, JST900, passing 1500, climbing 5000'" />
+                </TimedMessages>
             </Aircraft>
             <Aircraft Callsign="YUP" Type="C182" Delay="240" StartAuto="true">
                 <Squawk Code="3105" ModeC="true" />
@@ -5023,6 +5042,9 @@
                     Rules="1" CruiseSpeed="130" ETD="0000" ATD="0000" RFL="4000" EETHours="00"
                     EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/A NAV/RNP2/v/">ML6/34 ML W190 AV DCT</FlightPlan>
                 <Route>AVMEL AV</Route>
+                <TimedMessages>
+                    <TimedMessage Time="360" Message="YUP: 'Melbourne Departures, YUP, passing 1500, climbing 4000'" />
+                </TimedMessages>
             </Aircraft>
             <Aircraft Callsign="JST630" Type="A320" Delay="0">
                 <Squawk Code="2000" ModeC="false" />
@@ -5031,6 +5053,10 @@
                     Rules="1" CruiseSpeed="450" ETD="0000" ATD="0000" RFL="38000" EETHours="00"
                     EETMins="00" FuelHours="0" FuelMins="0" Remarks="PER/C NAV/RNP2 /v/">DCT ML H66 URKER Y54 BERNI DCT</FlightPlan>
                 <Route>JUSTY ML NONIX KACEY</Route>
+                <TimedMessages>
+                    <TimedMessage Time="780" Message="JST630 (Avalon, AV TWR closed): taxi call to the student now: 'Melbourne Approach, JST630, A320, IFR, taxiing Avalon for Gold Coast, runway 36'" />
+                    <TimedMessage Time="960" Message="JST630: 'Ready runway 36, request clearance'. Once cleared, set the cleared level and depart on the JUSTY3 SID (route JUSTY ML)" />
+                </TimedMessages>
             </Aircraft>
         </Targets>
     </ScenarioFile>
